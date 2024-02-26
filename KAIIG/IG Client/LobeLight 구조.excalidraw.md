@@ -43,6 +43,12 @@ LightControl:: addLights ^C4KcuSkY
 <Light를 Set할 때>
 1.  Light 관련 값들 세팅 ^xT7Aiedf
 
+KAIIGMain::UpdateControls() ^RhVa82pj
+
+(매 프레임 호출됨) ^7amV0pP8
+
+HAT, CameraPosition, CameraAttitude, OwnshipSpeed, Viewport Offset ^Xbx5Hwwp
+
 
 # Embedded files
 2a429a00586db531c5b6d35436c2d543312c7213: [[LobeLightControl_ApplyData.png]]
@@ -51,6 +57,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 9b4cce8d215ebd8b770514005c9722551a650755: [[EnvironmentControl_LightControlsAdd.png]]
 5de54464186647b4442ac4d0625f5c033109f827: [[LightManager_AddLight.png]]
 40255d732f4189ff17f14d225ede3f2aa45439e9: [[LightControl_addLights.png]]
+e092ad37aea8bbecb9c8e27ca6fdfded7da7da3d: [[Pasted Image 20240226092351_309.png]]
+73b296aa34d21e4f661ea8e5123ef46ef6219391: [[Pasted Image 20240226102428_618.png]]
 
 %%
 # Drawing
@@ -62,8 +70,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 	"elements": [
 		{
 			"type": "image",
-			"version": 10,
-			"versionNonce": 358121196,
+			"version": 11,
+			"versionNonce": 1215485643,
 			"isDeleted": false,
 			"id": "F7tlRNCCZ7Q_WfJpgpcWi",
 			"fillStyle": "solid",
@@ -83,7 +91,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -95,8 +103,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 		},
 		{
 			"type": "text",
-			"version": 62,
-			"versionNonce": 634134981,
+			"version": 63,
+			"versionNonce": 1306726245,
 			"isDeleted": false,
 			"id": "XnhL1W6A",
 			"fillStyle": "solid",
@@ -109,14 +117,14 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"y": -250.1589254751454,
 			"strokeColor": "#f08c00",
 			"backgroundColor": "transparent",
-			"width": 319.623046875,
+			"width": 343.90789794921875,
 			"height": 45,
 			"seed": 320874988,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708906686333,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -128,12 +136,12 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"containerId": null,
 			"originalText": "프로토콜 ApplyData",
 			"lineHeight": 1.25,
-			"baseline": 37
+			"baseline": 32
 		},
 		{
 			"type": "arrow",
-			"version": 568,
-			"versionNonce": 440516972,
+			"version": 569,
+			"versionNonce": 1092863339,
 			"isDeleted": false,
 			"id": "eokqn8Q3qBPSFvu9WdFC-",
 			"fillStyle": "solid",
@@ -155,7 +163,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -188,8 +196,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 		},
 		{
 			"type": "text",
-			"version": 196,
-			"versionNonce": 97749259,
+			"version": 197,
+			"versionNonce": 670423749,
 			"isDeleted": false,
 			"id": "eSZ4yOBf",
 			"fillStyle": "solid",
@@ -202,7 +210,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"y": -251.0247229972033,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 752.939453125,
+			"width": 813.2195434570312,
 			"height": 25,
 			"seed": 655459436,
 			"groupIds": [],
@@ -214,7 +222,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 					"type": "arrow"
 				}
 			],
-			"updated": 1708906686333,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -226,12 +234,12 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"containerId": null,
 			"originalText": "통신으로 받은 LobeLightControlData를 LightManager의 멤버 lightValue[i-1]로 넣어줌",
 			"lineHeight": 1.25,
-			"baseline": 21
+			"baseline": 18
 		},
 		{
 			"type": "image",
-			"version": 76,
-			"versionNonce": 1709093868,
+			"version": 77,
+			"versionNonce": 1593696267,
 			"isDeleted": false,
 			"id": "sRinc6vKA6fnCR9daXMsM",
 			"fillStyle": "solid",
@@ -260,7 +268,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 					"type": "arrow"
 				}
 			],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -272,8 +280,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 		},
 		{
 			"type": "arrow",
-			"version": 218,
-			"versionNonce": 1938280660,
+			"version": 219,
+			"versionNonce": 5782053,
 			"isDeleted": false,
 			"id": "FDPtyJxYP8lpvhQd9Miro",
 			"fillStyle": "solid",
@@ -295,7 +303,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -328,8 +336,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 		},
 		{
 			"type": "text",
-			"version": 62,
-			"versionNonce": 432906533,
+			"version": 63,
+			"versionNonce": 2080089771,
 			"isDeleted": false,
 			"id": "naaHkTmc",
 			"fillStyle": "solid",
@@ -342,14 +350,14 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"y": -78.08141150171838,
 			"strokeColor": "#f08c00",
 			"backgroundColor": "transparent",
-			"width": 518.853515625,
+			"width": 589.427734375,
 			"height": 45,
 			"seed": 876285036,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708906686333,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -361,12 +369,12 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"containerId": null,
 			"originalText": "KAIIGMain:: LightControlsSet(int)",
 			"lineHeight": 1.25,
-			"baseline": 37
+			"baseline": 32
 		},
 		{
 			"type": "image",
-			"version": 56,
-			"versionNonce": 1434359380,
+			"version": 57,
+			"versionNonce": 267890053,
 			"isDeleted": false,
 			"id": "wEbhoIbdBxYywI8u3jB-2",
 			"fillStyle": "solid",
@@ -391,7 +399,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 					"type": "arrow"
 				}
 			],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -403,8 +411,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 		},
 		{
 			"type": "arrow",
-			"version": 154,
-			"versionNonce": 941336812,
+			"version": 155,
+			"versionNonce": 1321703755,
 			"isDeleted": false,
 			"id": "2qgXhEdqAlHJXLuV2d0BI",
 			"fillStyle": "solid",
@@ -426,7 +434,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -455,8 +463,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 		},
 		{
 			"type": "text",
-			"version": 202,
-			"versionNonce": 1815359403,
+			"version": 203,
+			"versionNonce": 370259173,
 			"isDeleted": false,
 			"id": "B9rCoBuI",
 			"fillStyle": "solid",
@@ -469,14 +477,14 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"y": -91.891594798266,
 			"strokeColor": "#f08c00",
 			"backgroundColor": "transparent",
-			"width": 606.41015625,
+			"width": 652.499755859375,
 			"height": 45,
 			"seed": 1061244396,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708906686333,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -488,12 +496,12 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"containerId": null,
 			"originalText": "EnvironmentControl:: LightControlsSet",
 			"lineHeight": 1.25,
-			"baseline": 37
+			"baseline": 32
 		},
 		{
 			"type": "rectangle",
-			"version": 48,
-			"versionNonce": 252685164,
+			"version": 49,
+			"versionNonce": 1421621227,
 			"isDeleted": false,
 			"id": "E_08bmSa7xI7aFKLOGgZm",
 			"fillStyle": "solid",
@@ -520,14 +528,14 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 					"type": "arrow"
 				}
 			],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "arrow",
-			"version": 174,
-			"versionNonce": 1805914452,
+			"version": 175,
+			"versionNonce": 238276677,
 			"isDeleted": false,
 			"id": "Z5S8csc-id6ZXp72fDB5H",
 			"fillStyle": "solid",
@@ -549,7 +557,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -578,8 +586,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 		},
 		{
 			"type": "text",
-			"version": 81,
-			"versionNonce": 1143485573,
+			"version": 82,
+			"versionNonce": 2078540427,
 			"isDeleted": false,
 			"id": "sZpZmNy1",
 			"fillStyle": "solid",
@@ -592,14 +600,14 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"y": -28.465826111613993,
 			"strokeColor": "#e03131",
 			"backgroundColor": "transparent",
-			"width": 104.4921875,
+			"width": 109.97994995117188,
 			"height": 25,
 			"seed": 1812045012,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708906686333,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -611,12 +619,12 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"containerId": null,
 			"originalText": "enable일 때",
 			"lineHeight": 1.25,
-			"baseline": 21
+			"baseline": 18
 		},
 		{
 			"type": "image",
-			"version": 159,
-			"versionNonce": 1899939540,
+			"version": 160,
+			"versionNonce": 641433509,
 			"isDeleted": false,
 			"id": "laeilfIErOQWeu2CgLvI0",
 			"fillStyle": "solid",
@@ -641,7 +649,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 					"type": "arrow"
 				}
 			],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -653,8 +661,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 		},
 		{
 			"type": "text",
-			"version": 249,
-			"versionNonce": 419889739,
+			"version": 250,
+			"versionNonce": 217676075,
 			"isDeleted": false,
 			"id": "YhvqFiwL",
 			"fillStyle": "solid",
@@ -667,14 +675,14 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"y": -85.44339866634715,
 			"strokeColor": "#f08c00",
 			"backgroundColor": "transparent",
-			"width": 621.87890625,
+			"width": 655.1637573242188,
 			"height": 45,
 			"seed": 316085460,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708906686333,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -686,12 +694,12 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"containerId": null,
 			"originalText": "EnvironmentControl:: LightControlsAdd",
 			"lineHeight": 1.25,
-			"baseline": 37
+			"baseline": 32
 		},
 		{
 			"type": "rectangle",
-			"version": 44,
-			"versionNonce": 753323092,
+			"version": 45,
+			"versionNonce": 1951810309,
 			"isDeleted": false,
 			"id": "3FEQpihhkdeFp8RvcdjMi",
 			"fillStyle": "solid",
@@ -713,14 +721,14 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 51,
-			"versionNonce": 546921445,
+			"version": 52,
+			"versionNonce": 1432820683,
 			"isDeleted": false,
 			"id": "lGCAwXPQ",
 			"fillStyle": "solid",
@@ -733,7 +741,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"y": 4.77688697519018,
 			"strokeColor": "#e03131",
 			"backgroundColor": "transparent",
-			"width": 129.609375,
+			"width": 137.55995178222656,
 			"height": 25,
 			"seed": 528632940,
 			"groupIds": [],
@@ -745,7 +753,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 					"type": "arrow"
 				}
 			],
-			"updated": 1708906686333,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -757,12 +765,12 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"containerId": null,
 			"originalText": "Light 신규생성",
 			"lineHeight": 1.25,
-			"baseline": 21
+			"baseline": 18
 		},
 		{
 			"type": "arrow",
-			"version": 264,
-			"versionNonce": 275915220,
+			"version": 265,
+			"versionNonce": 1828821605,
 			"isDeleted": false,
 			"id": "HVglDmAuWH1fALjCLA5i-",
 			"fillStyle": "solid",
@@ -784,7 +792,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -821,8 +829,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 		},
 		{
 			"type": "image",
-			"version": 74,
-			"versionNonce": 9999724,
+			"version": 75,
+			"versionNonce": 289892971,
 			"isDeleted": false,
 			"id": "q698enJE3clE_6p4hFxq0",
 			"fillStyle": "solid",
@@ -847,7 +855,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 					"type": "arrow"
 				}
 			],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -859,8 +867,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 		},
 		{
 			"type": "text",
-			"version": 323,
-			"versionNonce": 1428586731,
+			"version": 324,
+			"versionNonce": 420152773,
 			"isDeleted": false,
 			"id": "VLNBM6jG",
 			"fillStyle": "solid",
@@ -873,14 +881,14 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"y": -320.02712578521306,
 			"strokeColor": "#f08c00",
 			"backgroundColor": "transparent",
-			"width": 393.275390625,
+			"width": 416.8438720703125,
 			"height": 45,
 			"seed": 1689506796,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708906686333,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -892,12 +900,12 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"containerId": null,
 			"originalText": "LightManager:: AddLight",
 			"lineHeight": 1.25,
-			"baseline": 37
+			"baseline": 32
 		},
 		{
 			"type": "rectangle",
-			"version": 111,
-			"versionNonce": 37423084,
+			"version": 112,
+			"versionNonce": 358933771,
 			"isDeleted": false,
 			"id": "ddX88jXHN76NMr6oEN-NU",
 			"fillStyle": "solid",
@@ -919,14 +927,14 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "arrow",
-			"version": 188,
-			"versionNonce": 415939796,
+			"version": 189,
+			"versionNonce": 193987877,
 			"isDeleted": false,
 			"id": "TTUkXNbzButW9EB9rbOlJ",
 			"fillStyle": "solid",
@@ -948,7 +956,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -973,8 +981,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 		},
 		{
 			"type": "image",
-			"version": 193,
-			"versionNonce": 1005267564,
+			"version": 194,
+			"versionNonce": 960105387,
 			"isDeleted": false,
 			"id": "M-Z62gRjTlJRTvcg2Q0uA",
 			"fillStyle": "solid",
@@ -999,7 +1007,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 					"type": "arrow"
 				}
 			],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -1011,8 +1019,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 		},
 		{
 			"type": "text",
-			"version": 367,
-			"versionNonce": 1462671173,
+			"version": 368,
+			"versionNonce": 402528389,
 			"isDeleted": false,
 			"id": "C4KcuSkY",
 			"fillStyle": "solid",
@@ -1025,14 +1033,14 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"y": -548.5184811860971,
 			"strokeColor": "#f08c00",
 			"backgroundColor": "transparent",
-			"width": 378.140625,
+			"width": 416.33984375,
 			"height": 45,
 			"seed": 834232020,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708906686333,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -1044,12 +1052,12 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"containerId": null,
 			"originalText": "LightControl:: addLights",
 			"lineHeight": 1.25,
-			"baseline": 37
+			"baseline": 32
 		},
 		{
 			"type": "text",
-			"version": 431,
-			"versionNonce": 1780296587,
+			"version": 432,
+			"versionNonce": 15818315,
 			"isDeleted": false,
 			"id": "bIAAFk76",
 			"fillStyle": "solid",
@@ -1062,7 +1070,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"y": 527.4348726576535,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 273.759765625,
+			"width": 290.07989501953125,
 			"height": 25,
 			"seed": 1987290860,
 			"groupIds": [],
@@ -1074,7 +1082,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 					"type": "arrow"
 				}
 			],
-			"updated": 1708906686333,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -1086,12 +1094,12 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"containerId": null,
 			"originalText": "프로토콜에서 LightEnable 이면",
 			"lineHeight": 1.25,
-			"baseline": 21
+			"baseline": 18
 		},
 		{
 			"type": "text",
-			"version": 711,
-			"versionNonce": 843409061,
+			"version": 712,
+			"versionNonce": 1209188325,
 			"isDeleted": false,
 			"id": "LwYkmOIV",
 			"fillStyle": "solid",
@@ -1104,7 +1112,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"y": 528.3338859956476,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 332.9296875,
+			"width": 358.8197937011719,
 			"height": 100,
 			"seed": 1775634540,
 			"groupIds": [],
@@ -1116,7 +1124,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 					"type": "arrow"
 				}
 			],
-			"updated": 1708906686333,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -1128,12 +1136,12 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"containerId": null,
 			"originalText": "1. lightManager->AddLight 호출\n\n\n2. lightManager->Setting 메소드 호출",
 			"lineHeight": 1.25,
-			"baseline": 96
+			"baseline": 93
 		},
 		{
 			"type": "arrow",
-			"version": 733,
-			"versionNonce": 962363244,
+			"version": 734,
+			"versionNonce": 124083435,
 			"isDeleted": false,
 			"id": "guAM44_6yHTK_ouvEC9ul",
 			"fillStyle": "solid",
@@ -1155,7 +1163,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1708485565235,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1184,8 +1192,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 		},
 		{
 			"type": "text",
-			"version": 682,
-			"versionNonce": 203784747,
+			"version": 683,
+			"versionNonce": 299596613,
 			"isDeleted": false,
 			"id": "0tAZ91sl",
 			"fillStyle": "solid",
@@ -1198,14 +1206,14 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"y": 385.3603953317742,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 582.05078125,
+			"width": 632.0198974609375,
 			"height": 100,
 			"seed": 651641428,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708906686333,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -1217,12 +1225,12 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"containerId": null,
 			"originalText": "<Light를 Add할 때>\n1.  만약 UpdateCallback이 안 들어가 있으면 콜백에 하나 넣어주자\n2. Light를 Add하고 각종 pointer들을 연결시켜주자\n    * 값 Setting 하는 건 따로 하자",
 			"lineHeight": 1.25,
-			"baseline": 96
+			"baseline": 93
 		},
 		{
 			"type": "text",
-			"version": 228,
-			"versionNonce": 1418414597,
+			"version": 229,
+			"versionNonce": 673220491,
 			"isDeleted": false,
 			"id": "0gvhIq4m",
 			"fillStyle": "solid",
@@ -1235,14 +1243,14 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"y": 559.737338845738,
 			"strokeColor": "#e03131",
 			"backgroundColor": "transparent",
-			"width": 396.0078125,
+			"width": 417.4399719238281,
 			"height": 20,
 			"seed": 826799468,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708906686333,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1254,12 +1262,12 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"containerId": null,
 			"originalText": "이미 존재하는지 확인하고 Add하는 걸로 여기서 고치자!",
 			"lineHeight": 1.25,
-			"baseline": 16
+			"baseline": 14
 		},
 		{
 			"type": "text",
-			"version": 899,
-			"versionNonce": 69862603,
+			"version": 900,
+			"versionNonce": 1303759525,
 			"isDeleted": false,
 			"id": "xT7Aiedf",
 			"fillStyle": "solid",
@@ -1272,7 +1280,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"y": 602.4507093964174,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 206.640625,
+			"width": 228.45994567871094,
 			"height": 50,
 			"seed": 121758444,
 			"groupIds": [],
@@ -1284,7 +1292,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 					"type": "arrow"
 				}
 			],
-			"updated": 1708906686333,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -1296,12 +1304,12 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 			"containerId": null,
 			"originalText": "<Light를 Set할 때>\n1.  Light 관련 값들 세팅",
 			"lineHeight": 1.25,
-			"baseline": 46
+			"baseline": 43
 		},
 		{
 			"type": "arrow",
-			"version": 41,
-			"versionNonce": 1692508372,
+			"version": 42,
+			"versionNonce": 1767726635,
 			"isDeleted": false,
 			"id": "-TJt8dFqxgDdfFjR3rfOo",
 			"fillStyle": "solid",
@@ -1323,7 +1331,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1708485610853,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -1344,8 +1352,8 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 		},
 		{
 			"type": "arrow",
-			"version": 60,
-			"versionNonce": 2020296556,
+			"version": 61,
+			"versionNonce": 1817128453,
 			"isDeleted": false,
 			"id": "xLd-X9EV79I_1tB7Wu7lU",
 			"fillStyle": "solid",
@@ -1367,7 +1375,7 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1708485620953,
+			"updated": 1708909480821,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -1389,12 +1397,279 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 					11.351307424691413
 				]
 			]
+		},
+		{
+			"id": "7re9co8cX-IiF0f9cwA3o",
+			"type": "image",
+			"x": -878.7679719638253,
+			"y": 1012.7768216268038,
+			"width": 826,
+			"height": 37,
+			"angle": 0,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 151765931,
+			"version": 235,
+			"versionNonce": 637952203,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1708909480821,
+			"link": null,
+			"locked": false,
+			"status": "pending",
+			"fileId": "e092ad37aea8bbecb9c8e27ca6fdfded7da7da3d",
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"id": "RhVa82pj",
+			"type": "text",
+			"x": -871.323527519381,
+			"y": 959.2212660712486,
+			"width": 506.8438415527344,
+			"height": 45,
+			"angle": 0,
+			"strokeColor": "#f08c00",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1849478795,
+			"version": 303,
+			"versionNonce": 1822762341,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1708909480821,
+			"link": null,
+			"locked": false,
+			"text": "KAIIGMain::UpdateControls()",
+			"rawText": "KAIIGMain::UpdateControls()",
+			"fontSize": 36,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"baseline": 32,
+			"containerId": null,
+			"originalText": "KAIIGMain::UpdateControls()",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "7amV0pP8",
+			"type": "text",
+			"x": -873.323527519381,
+			"y": 926.7212660712486,
+			"width": 245.083984375,
+			"height": 35,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 297465765,
+			"version": 307,
+			"versionNonce": 2008420203,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1708909480821,
+			"link": null,
+			"locked": false,
+			"text": "(매 프레임 호출됨)",
+			"rawText": "(매 프레임 호출됨)",
+			"fontSize": 28,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"baseline": 25,
+			"containerId": null,
+			"originalText": "(매 프레임 호출됨)",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "Xbx5Hwwp",
+			"type": "text",
+			"x": -875.2683823630226,
+			"y": 1068.0511664814312,
+			"width": 1236.70751953125,
+			"height": 45,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 11143371,
+			"version": 416,
+			"versionNonce": 1622600203,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1708909480821,
+			"link": null,
+			"locked": false,
+			"text": "HAT, CameraPosition, CameraAttitude, OwnshipSpeed, Viewport Offset",
+			"rawText": "HAT, CameraPosition, CameraAttitude, OwnshipSpeed, Viewport Offset",
+			"fontSize": 36,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"baseline": 32,
+			"containerId": null,
+			"originalText": "HAT, CameraPosition, CameraAttitude, OwnshipSpeed, Viewport Offset",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "Z-Cox0eI_-jKIGx2AUchB",
+			"type": "image",
+			"x": 391.51309260284006,
+			"y": 949.5078392240612,
+			"width": 933,
+			"height": 216,
+			"angle": 0,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 466095243,
+			"version": 66,
+			"versionNonce": 597309515,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"id": "tW_-yjabtbHCtevauXXbF",
+					"type": "arrow"
+				}
+			],
+			"updated": 1708910671008,
+			"link": null,
+			"locked": false,
+			"status": "pending",
+			"fileId": "73b296aa34d21e4f661ea8e5123ef46ef6219391",
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"id": "tW_-yjabtbHCtevauXXbF",
+			"type": "arrow",
+			"x": -35.986907397159484,
+			"y": 1033.5078392240612,
+			"width": 405.9999999999998,
+			"height": 2,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1472596069,
+			"version": 69,
+			"versionNonce": 1407383275,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1708910672232,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					405.9999999999998,
+					-2
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": null,
+			"endBinding": {
+				"elementId": "Z-Cox0eI_-jKIGx2AUchB",
+				"focus": 0.25751993032759435,
+				"gap": 21.499999999999773
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "dVHrlLdY",
+			"type": "text",
+			"x": -43.432219481014386,
+			"y": 1203.1968688997922,
+			"width": 10,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 468166725,
+			"version": 11,
+			"versionNonce": 302330053,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1708909480821,
+			"link": null,
+			"locked": false,
+			"text": "",
+			"rawText": "",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"baseline": 18,
+			"containerId": null,
+			"originalText": "",
+			"lineHeight": 1.25
 		}
 	],
 	"appState": {
 		"theme": "light",
 		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#1e1e1e",
+		"currentItemStrokeColor": "#e03131",
 		"currentItemBackgroundColor": "transparent",
 		"currentItemFillStyle": "solid",
 		"currentItemStrokeWidth": 2,
@@ -1402,14 +1677,14 @@ cd61cfe2aa9dc3f9e56536db581ad293d3a43f6f: [[EnvironmentControl_LightControlsSet.
 		"currentItemRoughness": 1,
 		"currentItemOpacity": 100,
 		"currentItemFontFamily": 1,
-		"currentItemFontSize": 16,
+		"currentItemFontSize": 36,
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1522.0132822091364,
-		"scrollY": 2331.82294839484,
+		"scrollX": 316.51860250303616,
+		"scrollY": -349.5171860085728,
 		"zoom": {
-			"value": 0.2
+			"value": 0.9622675815785541
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
