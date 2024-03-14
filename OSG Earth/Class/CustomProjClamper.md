@@ -10,4 +10,5 @@ osg::CullVisitor에서 카피한 clampProjectionMatrix 메소드를 활용하여
 - **\_clampProjectionMatrix**
 	- `bool _clampProjectionMatrix(matrix_type& projection, double& znear, double& zfar, value_type nearFarRatio)`
 	- osg의 clampProjectionMatrix함수를 Wrapping (완벽히 동일하게 복사)
+	- 소스 코드 : [[code_clampProjectionMatrix]]
 	- 

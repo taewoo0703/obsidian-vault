@@ -23,4 +23,3 @@
 	3. input이 vector인 경우(==주의!==)
 		input을 ==**열벡터**==로 가정하고, ==행렬 * 벡터== 연산을 수행한 뒤 나온 값을 return
 		`return _matrix * input`
-	

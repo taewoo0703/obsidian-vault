@@ -32,5 +32,4 @@ protected:
 		- `_maxFar`를 지정함.
 			- `_autoFarPlaneClamping`가 true 이면 카메라와 수평선(지평선)까지의 거리로 지정
 			- `_autoFarPlaneClamping`가 false 이면 DBL_MAX
-			- 
 		- `_nearFarRatio`를 수정함
