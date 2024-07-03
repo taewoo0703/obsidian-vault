@@ -26,5 +26,10 @@ Geographic 좌표계(Lat, Lon, Alt)를 사용하는 Point
 		값을 받을 matrix 변수를 input으로 넣어주면 거기에 LocalToWorld 행렬을 저장함. LocalToWorld 행렬은 MatrixTransform의 \_matrix와 같음. 즉 GeoTransform의 \_matrix와 같음
 	- `bool createWorldToLocal( osg::Matrixd& out_world2local ) const;`
 		LocalToWorld의 inverse
+	- 이 때 World는 ECEF 좌표계, Local은 ENU 좌표계이다.
+		- ECEF Coordinates : Earth Centered Earth Fixed Frame.
+			-  X : Equator, Y : 90 deg East, Z : North Pole
+		- ENU Coordinates : East North Up Coordinates
+			- X : East, Y : North, Z : Up
 
 > [[GeoTransform]]
